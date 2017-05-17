@@ -4,6 +4,7 @@
     <title>Josie Ord - Designer|Maker</title>
     <link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -18,53 +19,27 @@
             </ul>
         </nav>
     </header>
+    <div id="relimagecontainer">
     <div id="imageContainer">
         <img id="imageA" />
         <img id="imageB" />
     </div>
-
-    <script>
-        var imageUrls = [
-            'images/private/private/hatstand3.jpg',
-            'images/private/private/lampstandtable1.jpg',
-            'images/private/private/office1.jpg',
-            'images/private/private/office2.jpg'
-        ];
-        var imageIndex = -1;
-        var imageAElement = document.getElementById('imageA');
-        var imageBElement = document.getElementById('imageB');
-        //start immediately
-        switchImage();
-        //run every n milliseconds
-        setInterval(switchImage, 8000);
-
-        function switchImage() {
-            imageIndex = imageIndex + 1;
-            if (imageIndex >= imageUrls.length) {
-                imageIndex = 0;
-            }
-            var nextImageIndex = imageIndex + 1;
-            if (nextImageIndex >= imageUrls.length) {
-                nextImageIndex = 0;
-            }
-            var imageUrl = imageUrls[imageIndex];
-            var nextImageUrl = nextImageIndex;
-            var visibleElement;
-            var hiddenElement;
-            if (imageIndex % 2 === 0) {
-                visibleElement = imageAElement;
-                hiddenElement = imageBElement;
-            } else {
-                visibleElement = imageBElement;
-                hiddenElement = imageAElement;
-            }
-
-            visibleElement.src = imageUrl;
-            visibleElement.className = 'show';
-
-            hiddenElement.className = 'hide';
-        }
-    </script>
+    </div>
+    <div id="about">
+        <h2 id="about-title">Designs. Displays. Props. I love 'em!</h2>
+        <p id="about-body">
+            I design a variety of objects and make them with a variety materials for a 
+            variety of people. Whether it be private clients, well known brand names or 
+            commercial businesses.<br>Imagining and manufacturing objects, varying in size 
+            and purpose, whatever the brief, I endeavor to create beautifully simple work 
+            within which form and function are equal entities.<br>I have also worked as part 
+            of larger teams creating some pretty phenomenal installations. These include; Vevo, 
+            NME and Virgin Trains.<br>My work has previously been recognized and supported by 
+            brands such as Anglepoise and Kvadrat fabrics. My creations have also featured at 
+            music events and marketing campaigns across the UK. 
+        </p>
+    </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
