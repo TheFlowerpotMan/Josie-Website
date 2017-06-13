@@ -61,6 +61,8 @@ nav a:hover {
     height: 100%;
     opacity: 0;
     transition: opacity 1.2s linear;
+    padding: 0px;
+    margin: 0px;
 }
 
 #imageContainer .show {
@@ -71,15 +73,29 @@ nav a:hover {
 #imageContainer .hide {
     opacity: 0;
 }
-#about {
-    margin-top: 225px;
-    text-align: center;
-}
-#about-title {
-    padding-bottom: 30px;
-}
 #relimagecontainer {
-    margin: auto;
     height: calc(var(--element-height) * 1px);
     width: calc(var(--element-width) * 1px);
+    margin-bottom: 60px;
+}
+#about {
+    height: calc(var(--element-height) * 1px);
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+    border: 1px dotted red;
+}
+#about-body {
+    margin-top: 90px;
+    width: 30%;
+    margin-left: 15%;
+    border: 1px solid black;
+    
+}
+.face {
+    margin: auto;
+    margin-top: 70px;
+    border: 1px solid black;
+    border-radius: 100px;
 }
