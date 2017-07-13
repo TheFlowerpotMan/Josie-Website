@@ -1,10 +1,69 @@
 html body {
     font-family: 'Asap';
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
-a {
+
+img.resize {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nav 
+================================*/
+
+.navbar {
+    height: 75px;
+}
+.navbar-default {
+    background-color: rgba(248, 248, 248, 0.3);
+}
+.navbar-nav>li>a {
+    margin: 0px;
+    padding: 27px 25px;
+    transition: 0.4s;
+    font-size: 17px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+/*Carousel
+====================================*/
+
+/* Carousel base class */
+.carousel {
+    width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+}
+.carousel-inner {
+    width: 100%;
+    height: auto;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 100%;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+/*a {
     text-decoration: none;
     color: black;
 }
@@ -112,7 +171,7 @@ h2 {
 .thumbContainer {
     position: relative;
     width: 25%;
-    display: inline-flex;
+    display: inline-block;
     margin-bottom: 30px;
 }
 .thumbContainer .image {
@@ -140,4 +199,4 @@ h2 {
 .thumbText {
     color: black;
     font-size: 17px;
-}
+}*/
