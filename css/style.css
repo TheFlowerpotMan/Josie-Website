@@ -17,7 +17,7 @@ img.resize {
     height: 75px;
 }
 .nav-background {
-    background-color: rgba(248, 248, 248, 0.3);
+    background-color: rgba(248, 248, 248, 0.3)
 }
 .navbar-nav>li>a {
     margin: 0px;
@@ -83,7 +83,7 @@ img.resize {
 .thumbnail {
     border: none;
 }
-.col-md-3 {
+.col-sm-3 {
     padding: 0px;
 }
 .portfolio {
@@ -114,20 +114,13 @@ img.resize {
 .thumb-container:hover {
     opacity: 0.5;
 }
-/* .thumb-container:hover .thumb-middle {
+.thumb-container:hover .thumb-middle {
     opacity: 1;
-} */
+}
 .thumb-text {
     color: black;
     font-size: 15;
     font-size: 1vw;
-}
-
-.col-md-3.new-thumb {
-    border: 1px solid black;
-}
-.col-md-3.new-thumb:hover {
-    border: 1px solid blue;
 }
 
 

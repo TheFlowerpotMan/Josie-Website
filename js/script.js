@@ -1,24 +1,16 @@
 resizeDivs();
 window.addEventListener('resize', resizeDivs);
-//window.addEventListener('scroll', headerScroll);
-
-// function headerScroll() {
-//     debugger;
-//     var scrollTop = $(window).scrollTop();
-//     var height = 75;
-//     var styleSheet = document.styleSheets[3];
-//     var x = ((1 - (height - scrollTop) / height) * 0.8) + 0.3;
-//     styleSheet.cssRules[3].style.backgroundColor = 'rgba (248, 248, 248, ' + x + ')';
-// }
 
 $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
+    var height = 0;
+    var x = 0;
 
     $('.nav-background').css({
-        backgroundColor: function() {
-            var height = 75;
-            var x = ((1 - (height - scrollTop) / height) * 0.8) + 0.3;
-            return 'rgba (248, 248, 248, ' + x + ')';
+        "background-color": function() {
+            height = 75;
+            x = ((1 - (height - scrollTop) / height) * 0.08) + 0.3; 
+            return "rgba(248, 248, 248, " + x + ")";
         }
     });
 });
