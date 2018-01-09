@@ -6,18 +6,16 @@ img.resize {
     max-width: 100%;
     height: auto;
 }
-.header {
-
-}
 
 /* Nav 
 ================================*/
 
 .navbar {
     height: 75px;
+    border: none;
 }
 .nav-background {
-    background-color: rgba(248, 248, 248, 0.3)
+    background-color: rgba(248, 248, 248, 0.0)
 }
 .navbar-nav>li>a {
     margin: 0px;
@@ -80,29 +78,31 @@ img.resize {
 /* portfolio
 =============================================*/
 
-.thumbnail {
-    border: none;
-}
-.col-sm-3 {
-    padding: 0px;
-}
 .portfolio {
     text-align: center;
 }
 .private-title {
     margin-bottom: 50px;
 }
+.row {
+    /* margin-bottom: 30px; */
+}
+.col-md-4 {
+    padding: 15px;
+}
 .thumb-container {
     position: relative;
+    z-index: 1;
 }
 .thumb-container .image {
+    margin: auto;
     opacity: 1;
     display: block;
-    /* margin: auto; */
     transition: .5s ease;
     backface-visibility: hidden;
 }
 .thumb-middle {
+    padding: 1px;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -119,8 +119,6 @@ img.resize {
 }
 .thumb-text {
     color: black;
-    font-size: 15;
-    font-size: 1vw;
 }
 
 
