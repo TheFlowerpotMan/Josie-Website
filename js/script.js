@@ -26,12 +26,4 @@ function resizeDivs() {
     styleSheet.cssRules[9].style.height = innerWidth / 1.777777777777778;
     styleSheet.cssRules[7].style.height = innerWidth / 1.777777777777778;
     styleSheet.cssRules[10].style.height = innerWidth / 1.777777777777778;
-    // var carousel = document.getElementsByClassName(carousel);
-    // var item = document.getElementsByClassName(item);
-    // for(var i = 0; i < carousel.length; i++) {
-    //     carousel[i].style.height = innerHeight;
-    // }
-    // for(var j = 0; j < item.length; j++) {
-    //     item[j].style.height = innerHeight;
-    // }
 }
