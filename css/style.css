@@ -198,6 +198,12 @@ Social
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+.navbar .navbar-collapse {
+    background-color: rgba(248, 248, 248, 1);
+    margin-top: 10px;
+}
 
 
 /*a {
