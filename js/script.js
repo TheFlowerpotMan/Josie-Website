@@ -22,8 +22,7 @@ $(window).scroll(function() {
 
 function resizeDivs() {
     var innerWidth = window.innerWidth;
-    var styleSheet = document.styleSheets[3];
-    styleSheet.cssRules[9].style.height = innerWidth / 1.777777777777778;
-    styleSheet.cssRules[7].style.height = innerWidth / 1.777777777777778;
-    styleSheet.cssRules[10].style.height = innerWidth / 1.777777777777778;
+    $('.carousel, .carousel .item, .carousel-inner > .item > img').css({
+        height: innerWidth / 1.777777777777778
+    });
 }
